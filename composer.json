@@ -1,0 +1,42 @@
+{
+    "name": "psc-acme/parser-auth",
+    "description": "Package parser-auth for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\ParserAuth\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "aws/aws-sdk-php": "^3.332",
+        "laravel/framework": "^11.0",
+        "symfony/serializer": "^7.0",
+        "illuminate/database": "^11.0",
+        "symfony/cache": "^7.0",
+        "psc-acme/tracker-auth": "^1.0"
+    },
+    "require-dev": {
+        "behat/behat": "^3.14",
+        "vimeo/psalm": "^5.0",
+        "phpunit/phpunit": "^10.5"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
